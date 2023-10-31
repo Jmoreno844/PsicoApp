@@ -20,3 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('psicologos',[PsicologoController::class, 'listPsicologos']);
+
+Route::get('login', function () {
+    return response()->file(public_path('views\login.php'));
+});
