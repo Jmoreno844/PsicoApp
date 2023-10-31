@@ -45,7 +45,21 @@
       border-radius: 3px;
       cursor: pointer;
     }
+    .login-button, .create-account-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none; /* Remove default anchor underline */
+            margin: 10px;
+        }
 
+        .login-button:hover, .create-account-button:hover {
+            background-color: #0056b3;
+        }
     button:hover {
       background-color: #0056b3;
     }
@@ -54,15 +68,19 @@
 <body>
   <div class="container">
     <h2>Login</h2>
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" placeholder="Enter your username" required style="width: 90%;">
+    <form action="your-login-action" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Enter your username" required style="width: 90%;">
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required style="width: 90%;">
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter your password" required style="width: 90%;">
 
-      <button type="submit">Login</button>
-    </form>
+  <button type="submit" class="login-button">Login</button>
+</form>
+<form action="your-create-account-action" method="post">
+  <button type="submit" class="create-account-button">Create Account</button>
+</form>
   </div>
 </body>
+
 </html>
