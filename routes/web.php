@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PsicologoController;
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,3 +54,9 @@ Route::any('logs_imagen',[PsicologoController::class, 'listlogs_elegir_imagen'])
 Route::any('logs_details',[PsicologoController::class, 'listlogs_details']);
 
 Route::any('create_account',[PsicologoController::class, 'listcreate_account']);
+
+Route::get('/', function () {
+    return view('index');
+})->name('index');
+
+Route::get('/article/{id}', [ArticleController::class, 'show'])->name('article.show');

@@ -6,47 +6,71 @@
     <title>Options Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 
-        .options-container {
-            padding: 20px;
-        }
+.options-container {
+    padding: 20px;
+    max-width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        .image-button {
-            width: 30%; /* Make the image button take up the full width */
-            max-width: 200px; /* Set a maximum width */
-            height: 20vh; /* Set a specific height as a percentage of the viewport height */
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            overflow: hidden; /* Ensure the image won't exceed the specified height */
-            transition: transform 0.2s;
-        }
+h2 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
 
-        .image-button img {
-            width: 100%; /* Make the image inside the button take up the full width */
-            height: auto; /* Maintain the aspect ratio */
-            border-radius: 5px; /* Apply border-radius to the image */
-        }
+.image-button {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
-        .image-button:hover {
-            transform: scale(1.1);
-        }
+.image-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ajuste para cubrir el contenedor manteniendo la relación de aspecto */
+    max-height: 150px; /* Altura máxima para las imágenes */
+}
 
-        #nextButton {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
+.image-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#nextButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#nextButton:hover {
+    background-color: #2980b9;
+}
+
+
+
     </style>
 </head>
 <body>

@@ -75,7 +75,7 @@
         }
 
         .account-button {
-            background-color: #fff; /* Adjust the button styles as needed */
+            background-color: #f0f0f0; /* Adjust the button styles as needed */
             border: 1px solid #ddd; /* Adjust the button styles as needed */
             border-radius: 5px;
             padding: 10px;
@@ -92,6 +92,19 @@
             height: 24px; /* Adjust the size of the button image */
             margin-right: 10px;
         }
+        .account-button:hover {
+            background-color: #f0f0f0; /* Cambia el color al pasar el ratón */
+        }
+
+        .login-button {
+            /* ... Otros estilos ... */
+            text-decoration: none; /* Elimina el subrayado predeterminado */
+            color: #fff; /* Cambia el color del texto a blanco */
+        }
+
+        .login-button:hover {
+            background-color: #0056b3; /* Cambia el color al pasar el ratón */
+        }
     </style>
 </head>
 <body>
@@ -105,7 +118,7 @@
     // User is logged in, show account HUD
     echo '<div class="container account-hud">';
     // Add the user's profile image (replace "profile-image.jpg" with the actual path)
-    echo '<img class="profile-image" src="profile-image.jpg" alt="Profile Image">';
+    echo '<img class="profile-image" src="../resources/images/icono_perfil.png" alt="Profile Image">';
     // Add the user's account name
     echo '<div class="account-name">'.$fullname.'</div>';
     // Add account buttons
@@ -113,7 +126,7 @@
     // Example buttons, add your own as needed
 
     // Logout button
-    echo '<div class="account-button" onclick="logout()"><img src="icon3.png" alt="Icon 3"> Cerrar sesion</div>';
+    echo '<div class="account-button" onclick="logout()"><img src="../resources/images/icon3.png" alt="Icon 3"> Cerrar sesion</div>';
     echo '</div>';
     echo '</div>';
 } else {

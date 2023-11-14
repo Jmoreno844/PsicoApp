@@ -9,95 +9,114 @@
     <title>Diario</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .diary-header {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-        }
+.diary-header {
+    background: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
 
-        .add-entry-btn {
-            font-size: 24px;
-            background-color: #2ecc71;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
+.add-entry-btn {
+    font-size: 24px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        .separator {
-            border: 1px solid #ccc;
-            margin: 10px 0;
-        }
+.add-entry-btn:hover {
+    background-color: #27ae60;
+}
 
-        .diary-entries-container {
-            max-height: 400px; /* Set the maximum height for the scrollable container */
-            overflow-y: auto; /* Enable vertical scrolling */
-            padding: 10px;
-        }
+.separator {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
 
-        .diary-entries {
-            /* Removed padding from this div */
-        }
+.diary-entries-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
 
-        .entry-card {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            padding: 10px;
-        }
+.diary-entries {
+    /* Removed padding from this div */
+}
 
-        .entry-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
+.entry-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
-        .date-time {
-            font-size: 14px;
-            color: #555;
-        }
+.entry-card:hover {
+    transform: scale(1.02);
+}
 
-        .delete-btn {
-            background-color: #e74c3c;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.entry-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 
-        .emotion {
-            max-width: 40px;
-            max-height: 40px;
-        }
+.date-time {
+    font-size: 14px;
+    color: #555;
+}
 
-        .entry-title {
-            font-size: 16px;
-        }
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        /* Add a style for the entry card link */
-        .entry-link {
-            text-decoration: none;
-            color: #000;
-            cursor: pointer;
-        }
+.delete-btn:hover {
+    background-color: #c0392b;
+}
 
-        .entry-link:hover {
-            text-decoration: underline;
-        }
+.emotion {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.entry-title {
+    font-size: 16px;
+    color: #333;
+}
+
+.entry-link {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.entry-link:hover {
+    color: #3498db;
+}
+
+
     </style>
 </head>
 <body>
