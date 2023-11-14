@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PsicologoController;
 use Illuminate\Support\Facades\Route;
@@ -19,8 +20,36 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/login', [LoginController::class, 'login_method']);
+
 Route::get('psicologos',[PsicologoController::class, 'listPsicologos']);
 
-Route::get('login', function () {
-    return response()->file(public_path('views\login.php'));
-});
+Route::any('login',[PsicologoController::class, 'listLogin']);
+
+Route::get('account',[PsicologoController::class, 'listAccount']);
+
+Route::get('logs',[PsicologoController::class, 'listLogs']);
+
+Route::get('inicio',[PsicologoController::class, 'listInicio']);
+
+Route::get('/chats',[PsicologoController::class, 'listChats']);
+
+Route::get('/chats_backend',[PsicologoController::class, 'listChats_backend']);
+
+Route::get('prueba',[PsicologoController::class, 'listprueba']);
+
+Route::any('messages',[PsicologoController::class, 'listMessages']);
+
+Route::get('terapia',[PsicologoController::class, 'listTerapia']);
+
+Route::get('popup_page',[PsicologoController::class, 'listPopup']);
+
+Route::get('sucessfull',[PsicologoController::class, 'listSuccessfull']);
+
+Route::any('logs_texto',[PsicologoController::class, 'listlogs_elegir_texto']);
+
+Route::any('logs_imagen',[PsicologoController::class, 'listlogs_elegir_imagen']);
+
+Route::any('logs_details',[PsicologoController::class, 'listlogs_details']);
+
+Route::any('create_account',[PsicologoController::class, 'listcreate_account']);
