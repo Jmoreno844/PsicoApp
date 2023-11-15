@@ -71,5 +71,14 @@ class PsicologoController extends Controller
         return view("logs_details");
     }
 
+    public function listarticulo1(){
+        return view("articulo1");
+    }
+    public function listarticulo2(){
+        return view("articulo2");
+    }
+    public function listarticulo3(){
+        return view("articulo3");
+    }
 
 }

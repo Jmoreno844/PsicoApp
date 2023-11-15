@@ -132,8 +132,8 @@
 } else {
     // User is not logged in, show login link
     echo '<div class="container">';
-    echo '<h1>Welcome to Your App</h1>';
-    echo '<p>Please log in to your account.</p>';
+    echo '<h1>Bienvendo a PsicoApp</h1>';
+    echo '<p>Porfavor ingresa sesion.</p>';
     echo '<a href="login" class="login-button">Login</a>';
     echo '</div>';
 }

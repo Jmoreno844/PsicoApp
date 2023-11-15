@@ -76,6 +76,7 @@
 @yield('account')
 @yield('inicio')
 
+
 </body>
 <footer>
     <div class="footer">

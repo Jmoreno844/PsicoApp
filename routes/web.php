@@ -60,3 +60,7 @@ Route::get('/', function () {
 })->name('index');
 
 Route::get('/article/{id}', [ArticleController::class, 'show'])->name('article.show');
+
+Route::get('articulo1',[PsicologoController::class, 'listarticulo1']);
+Route::get('articulo2',[PsicologoController::class, 'listarticulo2']);
+Route::get('articulo3',[PsicologoController::class, 'listarticulo3']);

@@ -70,28 +70,28 @@
 </head>
 <body>
   <div class="container">
-    <h2>Register</h2>
+    <h2>Registro</h2>
     <form action="../resources/php/create_acc_method.php" method="post" onsubmit="submitForm()">
 
 
-      <label for="first_name">First Name:</label>
-      <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required style="width: 90%;">
+      <label for="first_name">Nombre:</label>
+      <input type="text" id="first_name" name="first_name" placeholder="Ingresa tu Nombre" required style="width: 90%;">
 
-      <label for="last_name">Last Name:</label>
-      <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required style="width: 90%;">
+      <label for="last_name">Apellido:</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Ingresa tu Apellido" required style="width: 90%;">
 
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" placeholder="Enter your username" required style="width: 90%;">
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" name="username" placeholder="Inresa tu nombre de usuario" required style="width: 90%;">
 
       <label for="email">Email:</label>
-      <input type="text" id="email" name="email" placeholder="Enter your email" required style="width: 90%;">
+      <input type="text" id="email" name="email" placeholder="Ingresa tu email" required style="width: 90%;">
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required style="width: 90%;">
+      <label for="password">Conraseña:</label>
+      <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required style="width: 90%;">
 
-      <button type="submit" class="create-account-button">Create Account</button>
+      <button type="submit" class="create-account-button">Crear cuenta</button>
     </form>
-    <p style="text-align: center; margin-top: 10px;">Already have an account? <a href="login">Log in here</a></p>
+    <p style="text-align: center; margin-top: 10px;">Tienes cuenta? <a href="login">Log in aqui</a></p>
   </div>
 
   <script>
