@@ -64,7 +64,7 @@
 <body>
 
 <div class="entry-form">
-    <h2>Log Entry</h2>
+    <h2>crear nota</h2>
 
     <form action="../resources/php/logs_crear_entrada.php" method="post">
         <?php
@@ -74,13 +74,13 @@
         }
         ?>
 
-        <label for="entryTitle">Title:</label>
+        <label for="entryTitle">Titulo:</label>
         <input type="text" id="entryTitle" name="entryTitle" class="entry-input" required>
 
-        <label for="entryText">Text:</label>
+        <label for="entryText">Texto:</label>
         <textarea id="entryText" name="entryText" class="entry-input" rows="4" required></textarea>
 
-        <button type="submit" id="submitButton">Upload Entry</button>
+        <button type="submit" id="submitButton">Subir</button>
     </form>
 </div>
 
